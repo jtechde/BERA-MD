@@ -95,7 +95,7 @@ async function startBera() {
       const currentTime = Date.now();
       if (currentTime - lastTextTime >= messageDelay) {
         await client.sendMessage(callerId, {
-          text: '```❗📵I AM BERA MD | I REJECT THIS CALL BECAUSE MY OWNER IS BUSY. KINDLY SEND TEXT INSTEAD```.',
+          text: '```*Bera Md Rejected the Call Because Owner Is Busy. Please Text instead*```.',
         });
         lastTextTime = currentTime;
       } else {
