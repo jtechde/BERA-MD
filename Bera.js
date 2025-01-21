@@ -47,7 +47,7 @@ module.exports = Bera = async (client, m, chatUpdate, message, store) => {
       ? m.message.extendedTextMessage.contextInfo.mentionedJid
       : [];
 
-    let msgKeith = m.message.extendedTextMessage?.contextInfo?.quotedMessage;
+    let msgBera = m.message.extendedTextMessage?.contextInfo?.quotedMessage;
     let budy = typeof m.text === "string" ? m.text : "";
 
     const timestamp = speed();
@@ -72,7 +72,7 @@ module.exports = Bera = async (client, m, chatUpdate, message, store) => {
       return admins || [];
     };
 
-    const keizzah = m.quoted || m;
+    const bruce  = m.quoted || m;
     const quoted = bruce.mtype === 'buttonsMessage' ? bruce[Object.keys(bruce)[1]] :
                   bruce.mtype === 'templateMessage' ? bruce.hydratedTemplate[Object.keys(bruce.hydratedTemplate)[1]] :
                   bruce.mtype === 'product' ? bruce[Object.keys(bruce)[0]] : m.quoted ? m.quoted : m;
@@ -85,7 +85,7 @@ module.exports = Bera = async (client, m, chatUpdate, message, store) => {
     const qmsg = quoted;
 
     const DevBera = dev.split(",");
-    const Owner = DevKeith.map(v => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(m.sender);
+    const Owner = DevBera.map(v => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(m.sender);
 
     const groupMetadata = m.isGroup ? await client.groupMetadata(m.chat).catch(() => {}) : "";
     const groupName = m.isGroup && groupMetadata ? groupMetadata.subject : "";
