@@ -147,7 +147,7 @@ module.exports = async (context) => {
                     externalAdReply: {
                         title: "🌟 𝐁𝐄𝐑𝐀 𝐓𝐄𝐂𝐇 ✨",
                         body: "𝐫𝐞𝐠𝐚𝐫𝐝𝐬 𝐁𝐫𝐮𝐜𝐞 𝐁𝐞𝐫𝐚 ",
-                        thumbnailUrl: "https://telegra.ph/file/17c83719a1b40e02971e4.jpg",
+                        thumbnailUrl: "https://i.ibb.co/4jBhn13/Socialthumb.jpg",
                         sourceUrl: "https://whatsapp.com/channel/0029VajJoCoLI8YePbpsnE3q",
                         mediaType: 1,
                         renderLargerThumbnail: true
