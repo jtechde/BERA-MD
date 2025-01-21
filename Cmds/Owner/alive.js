@@ -58,7 +58,7 @@ module.exports = async (context) => {
       mentionedJid: [m.sender],
       externalAdReply: {
         title: '𝗜 𝗔𝗠 𝗔𝗟𝗜𝗩𝗘 𝗠𝗢𝗧𝗛𝗘𝗥𝗙𝗨𝗖𝗞𝗘𝗥',
-        body: 'Regards Keithkeizzah',
+        body: 'BERA TECH ',
         thumbnailUrl: img,
         sourceUrl: murl,
         mediaType: 1,
