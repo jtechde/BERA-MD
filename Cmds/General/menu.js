@@ -82,25 +82,22 @@ module.exports = async (context) => {
             return quotes[randomIndex];
         };
 
-        let menuText = `*╰►Hey, ${getGreeting()}, ${m.pushName}*\n\n`;
+        let menuText = `> *Hello, ${getGreeting()}, ${m.pushName}*\n\n`;
 
         // Add random quote
-        menuText += `✨ *Inspiration*: *${getRandomQuote()}*  ✨\n\n`;
+        menuText += `> *Inspiration*: *${getRandomQuote()}*  \n\n`;
 
         // General information about the bot and user
-        menuText += `╭━━━  ⟮  ${botname} ⟯━━━━━━┈⊷\n`;
-        menuText += `┃✵╭──────────────\n`; 
-        menuText += `┃✵│ ᴄᴏᴍᴍᴀɴᴅᴇʀ: ${m.pushName}\n`; 
-        menuText += `┃✵│ ᴛᴏᴛᴀʟ ᴘʟᴜɢɪɴs: ${totalCommands}\n`;
-        menuText += `┃✵│ ᴛɪᴍᴇ: ${getCurrentTimeInNairobi()}\n`;
-        menuText += `┃✵│ ᴘʀᴇғɪx: ${prefix}\n`;
-        menuText += `┃✵│ ᴍᴏᴅᴇ: ${mode}\n`;
-        menuText += '┃✵│ ʟɪʙʀᴀʀʏ: Baileys\n';
-        menuText += '┃✵╰──────────────\n';
-        menuText += '╰━━━━━━━━━━━━━━━━━━┈⊷\n';
-
-        menuText += '━━━━━━━━━━━━━━━━━━━━\n';
-        menuText += '*┃𒊹┃𒊹┃𒊹┃𒊹┃𒊹┃𒊹┃𒊹┃𒊹┃:*\n\n';
+        menuText += `*╭━━━  ⟮  ${botname} ⟯━━━━━━*\n`;
+        menuText += `*┃╭──────────────*\n`; 
+        menuText += `*┃│ Commander ${m.pushName}*\n`; 
+        menuText += `*┃│ Cmd's: ${totalCommands}*\n`;
+        menuText += `*┃│ Time ${getCurrentTimeInNairobi()}*\n`;
+        menuText += `*┃│ Prefix: ${prefix}*\n`;
+        menuText += `*┃│ Mode: ${mode}*\n`;
+        menuText += '*┃│ Owner: Bruce Bera*\n';
+        menuText += '*┃╰──────────────*\n';
+        menuText += '*╰━━━━━━━━━━━━━━━━━━*\n';
 
         // Function to convert text to fancy uppercase font
         const toFancyUppercaseFont = (text) => {
@@ -127,11 +124,11 @@ module.exports = async (context) => {
             const commandFiles = fs.readdirSync(`./Cmds/${category.name}`).filter((file) => file.endsWith('.js'));
             const fancyCategory = toFancyUppercaseFont(category.name.toUpperCase());
 
-            menuText += ` ╭─────「 ${fancyCategory} ${category.emoji}───┈⊷ \n`;
+            menuText += ` ╭───── ${fancyCategory} ${category.emoji}───┈⊷ \n`;
             for (const file of commandFiles) {
                 const commandName = file.replace('.js', '');
                 const fancyCommandName = toFancyLowercaseFont(commandName);
-                menuText += ` ││◦➛  ${commandCounter}. ${fancyCommandName}\n`;
+                menuText += ` *││◦ ${commandCounter}.* ${fancyCommandName}\n`;
                 commandCounter++;
             }
 
@@ -145,9 +142,9 @@ module.exports = async (context) => {
                 contextInfo: {
                     mentionedJid: [m.sender], // Mention the sender
                     externalAdReply: {
-                        title: "🌟 𝐁𝐄𝐑𝐀 𝐓𝐄𝐂𝐇 ✨",
-                        body: "𝐫𝐞𝐠𝐚𝐫𝐝𝐬 𝐁𝐫𝐮𝐜𝐞 𝐁𝐞𝐫𝐚 ",
-                        thumbnailUrl: "https://i.ibb.co/4jBhn13/Socialthumb.jpg",
+                        title: "𝐁𝐄𝐑𝐀 𝐓𝐄𝐂𝐇",
+                        body: "𝐁𝐫𝐮𝐜𝐞 𝐁𝐞𝐫𝐚 ",
+                        thumbnailUrl: "https://telegra.ph/file/17c83719a1b40e02971e4.jpg",
                         sourceUrl: "https://whatsapp.com/channel/0029VajJoCoLI8YePbpsnE3q",
                         mediaType: 1,
                         renderLargerThumbnail: true
