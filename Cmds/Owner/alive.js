@@ -28,7 +28,7 @@ module.exports = async (context) => {
   const name = m.pushName || client.getName(m.sender);
   const url = 'https://github.com/Berabruce/BERA-MD';
   const murl = 'https://whatsapp.com/channel/0029VajJoCoLI8YePbpsnE3q';
-  const img = 'https://telegra.ph/file/17c83719a1b40e02971e4.jpg';
+  const img = 'https://i.ibb.co/4jBhn13/Socialthumb.jpg';
 
   // Constructing the contact message
   const con = {
