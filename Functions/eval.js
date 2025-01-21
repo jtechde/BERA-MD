@@ -5,16 +5,16 @@ module.exports = async (client, m, Owner, budy, fetchJson, store) => {
   if (budy && budy.startsWith('>')) {
     // If the sender is not the owner
     if (m.sender !== Owner) {
-      const menuText = `This command is only for the owner or Keithkeizzah to execute 🚫`;
+      const menuText = `*Only Bera Or The Bot Owner Can use this Command*`;
 
       await client.sendMessage(m.chat, {
         text: menuText,
         contextInfo: {
           mentionedJid: [m.sender], // Mention the sender
           externalAdReply: {
-            title: "𝐊𝐄𝐈𝐓𝐇-𝐌𝐃",
-            body: "Regards Keithkeizzah",
-            sourceUrl: "https://whatsapp.com/channel/0029Vaan9TF9Bb62l8wpoD47",
+            title: "Bera Md",
+            body: "*Made with Love*",
+            sourceUrl: "https://whatsapp.com/channel/0029VajJoCoLI8YePbpsnE3q",
             mediaType: 1,
             renderLargerThumbnail: false
           }
