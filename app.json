@@ -16,7 +16,7 @@
   ],
   "website": "https://github.com/Berabruce/BERA-TECH#readme",
   "repository": "https://github.com/Berabruce/BERA-MD.git",
-  "logo": "https://i.imgur.com/dAtHp2k.jpeg",
+  "logo": "https://i.ibb.co/4jBhn13/Socialthumb.jpg",
   "success_url": "/",
   "env": {
     "PREFIX": {
@@ -61,17 +61,17 @@
     },
     "STICKER_AUTHOR": {
       "description": "Put your sticker author data",
-      "value": "Keith",
+      "value": "Bera",
       "required": false
     },
     "STICKER_PACKNAME": {
       "description": "Put your sticker packname data",
-      "value": "Keizzah",
+      "value": "Bruce",
       "required": false
     },
     "BOTNAME": {
       "description": "Enter name for your bot,,you can change this.",
-      "value": "𝐊𝐄𝐈𝐓𝐇-𝐌𝐃",
+      "value": "BERA MD",
       "required": false
     },
     "GC_PRESENCE": {
