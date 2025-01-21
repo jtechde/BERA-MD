@@ -3,7 +3,7 @@ module.exports = async (context) => {
 
   try {
     // Fetch repository data from GitHub
-    const response = await fetch("https://api.github.com/repos/Keithkeizzah/KEITH-MD");
+    const response = await fetch("https://api.github.com/repos/Berabruce/BERA-MD");
     const repoData = await response.json();
 
     // Extract relevant information
@@ -22,8 +22,8 @@ module.exports = async (context) => {
 
     // Construct message caption
     const messageCaption = `
-      *Hello ,,,👋 This is 𝐊𝐄𝐈𝐓𝐇-𝐌𝐃*
-      The best bot in the universe developed by Kᴇɪᴛʜ Kᴇɪᴢᴢᴀʜ. Fork and give a star 🌟 to my repo
+      *Hello ,,,👋 This is 𝐁𝐄𝐑𝐀-𝐌𝐃*
+      The best bot in the universe developed by Bruce Bera. Fork and give a star 🌟 to my repo
       ╭───────────────────
       │✞ *Stars:* ${repoInfo.stars}
       │✞ *Forks:* ${repoInfo.forks}
@@ -31,7 +31,6 @@ module.exports = async (context) => {
       │✞ *Last Update:* ${lastUpdateDate}
       │✞ *Owner:* ${repoInfo.owner}
       │✞ *Repository:* ${repoInfo.url}
-      │✞ *Session:* keithmd.onrender.com
       ╰───────────────────
     `;
 
@@ -41,9 +40,9 @@ module.exports = async (context) => {
       contextInfo: {
         mentionedJid: [m.sender], // Mention the sender
         externalAdReply: {
-          title: "🌟 𝐊𝐄𝐈𝐓𝐇-𝐌𝐃 ✨",
-          body: "𝐫𝐞𝐠𝐚𝐫𝐝𝐬 𝐊𝐞𝐢𝐭𝐡𝐤𝐞𝐢𝐳𝐳𝐚𝐡",
-          sourceUrl: "https://whatsapp.com/channel/0029Vaan9TF9Bb62l8wpoD47",
+          title: "🌟 𝐁𝐄𝐑𝐀-𝐌𝐃 ✨",
+          body: "bera tech",
+          sourceUrl: "https://whatsapp.com/channel/0029VajJoCoLI8YePbpsnE3q",
           mediaType: 1,
           renderLargerThumbnail: true
         }
