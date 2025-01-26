@@ -5,17 +5,18 @@ module.exports = async (client, m, Owner, budy, fetchJson, store) => {
   if (budy && budy.startsWith('>')) {
     // If the sender is not the owner
     if (m.sender !== Owner) {
-      const menuText = ``;
+      const menuText = `This command is only for the owner🚫`;
 
       await client.sendMessage(m.chat, {
         text: menuText,
         contextInfo: {
           mentionedJid: [m.sender], // Mention the sender
           externalAdReply: {
-            title: "BERA TECH",
-            body: "",
-            
-            
+            title: "BERA MD",
+            body: "BERA TECH",
+            sourceUrl: "https://wa.me/254743982206",
+            mediaType: 1,
+            renderLargerThumbnail: false
           }
         }
       });
@@ -37,11 +38,3 @@ module.exports = async (client, m, Owner, budy, fetchJson, store) => {
     }
   }
 };
-     const audioFiles = [
-    
-    'https://files.catbox.moe/tn32z0.m4a'
-  ];
-
-  // Randomly pick an audio file
-  const vn = audioFiles[Math.floor(Math.random() * audioFiles.length)];
-                   
