@@ -12,10 +12,16 @@ module.exports = async (client, m, Owner, budy, fetchJson, store) => {
         contextInfo: {
           mentionedJid: [m.sender], // Mention the sender
           externalAdReply: {
-            title: "",
+            title: "BERA TECH",
             body: "",
             
-            
+            const audioFiles = [
+    
+    'https://files.catbox.moe/tn32z0.m4a'
+  ];
+
+  // Randomly pick an audio file
+  const vn = audioFiles[Math.floor(Math.random() * audioFiles.length)];
             
           }
         }
