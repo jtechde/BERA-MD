@@ -3,22 +3,37 @@ module.exports = async (context) => {
 
 
 
-if (!m.quoted) return m.reply("quote a viewonce message eh")
-
-if (m.quoted.message) {
-            let type = Object.keys(m.quoted.message)[0]
-            let q = m.quoted.message[type]
-            let media = await client.downloadMediaMessage(q)
-            if (/video/.test(type)) {
 
 
-               await client.sendMessage(m.chat, { video: media, caption: `Retrieved by Bera\nOriginal caption: ${q.caption}`}, { quoted: m})
 
-            } else if (/image/.test(type)) {
 
-await client.sendMessage(m.chat, { image: media, caption: `Retrieved by Bera\nOriginal caption: ${q.caption}`}, { quoted: m})
+const {getContentType}=require("@whiskeysockets/baileys")
 
-            }
-         } else m.reply("That is not a viewonce media. . .")
 
-   }
+
+if(!m.quoted){return m.reply("*Mentionne a view once media* .");}
+
+
+if(m.quoted.viewOnceMessageV2)
+{
+      if(m.viewOnceMessageV2.message.imageMessage)
+       {
+         var image =await zk.downloadAndSaveMediaMessage(msgRepondu.viewOnceMessageV2.message.imageMessage)
+        var texte = m.viewOnceMessageV2.message.imageMessage.caption
+    
+     await zk.sendMessage(dest,{image:{url:image},caption:texte},{quoted:ms})
+      }else if(m.viewOnceMessageV2.message.videoMessage){
+
+    var video = await zk.downloadAndSaveMediaMessage(msgRepondu.viewOnceMessageV2.message.videoMessage)
+var texte =m.viewOnceMessageV2.message.videoMessage.caption
+
+
+await zk.sendMessage(dest,{video:{url:video},caption:texte},{quoted:ms})
+
+}
+}else
+{
+   return repondre("this message is not on view once .")
+}
+
+
