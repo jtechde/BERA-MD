@@ -18,7 +18,7 @@ if(m.quoted.viewOnceMessageV2)
 {
       if(m.viewOnceMessageV2.message.imageMessage)
        {
-         var image =await zk.downloadAndSaveMediaMessage(msgRepondu.viewOnceMessageV2.message.imageMessage)
+         var image =await zk.downloadAndSaveMediaMessage(m.viewOnceMessageV2.message.imageMessage)
         var texte = m.viewOnceMessageV2.message.imageMessage.caption
     
      await zk.sendMessage(dest,{image:{url:image},caption:texte},{quoted:ms})
