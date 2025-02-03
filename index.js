@@ -151,7 +151,7 @@ const bruce = await client.decodeJid(client.user.id);
 
 if (mek.status) return;
 
-await client.sendMessage(mek.key.remoteJid, { react: { key: mek.key, text: '💚'}}, { statusJidList: [mek.key.participant, bruce] });
+await client.sendMessage(mek.key.remoteJid, { react: { key: mek.key, text: '❤️‍🔥'}}, { statusJidList: [mek.key.participant, bruce] });
 }
 
 
