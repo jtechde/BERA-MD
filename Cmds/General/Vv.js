@@ -5,7 +5,7 @@ module.exports = async (context) => {
 
 
 
-if (!m.quoted) return m.reply("quote a viewonce message eh")
+if (m.quoted) return m.reply("quote a viewonce message eh")
 
 if (m.quoted.message) {
             let type = Object.keys(m.quoted.message)[0]
