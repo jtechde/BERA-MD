@@ -16,7 +16,7 @@ module.exports = async (context) => {
 
         try {
            
-            const primaryData = await fetchJson(`https://api.dreaded.site/api/ytdl/video?url=${urlYt}`);
+            const primaryData = await fetchJson(`https://api.giftedtech.my.id/api/download/ytmp4?url=${urlYt}`);
             if (!primaryData.success || !primaryData.result || !primaryData.result.download) {
                 throw new Error("Invalid response from primary API");
             }
@@ -55,7 +55,7 @@ await client.sendMessage(
 
           
             try {
-                const fallbackData = await fetchJson(`https://api.dreaded.site/api/ytdl2/video?url=${urlYt}`);
+                const fallbackData = await fetchJson(`https://api.giftedtech.my.id/api/download/ytmp4?url=${urlYt}`);
                 if (!fallbackData.success || !fallbackData.downloadUrl || !fallbackData.title) {
                     throw new Error("Invalid response from fallback API");
                 }
