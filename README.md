@@ -53,9 +53,9 @@ The WhatsApp Bot BERA MD is released under the [MIT License](https://opensource.
 
 ## 𝔻𝔼𝕍𝔼𝕃𝕆ℙ𝔼ℝ𝕊 :
 
-- [**BERA TECH**](https://github.com/Fred1e)
-- [**BELTAH TECH**](https://github.com/BELTAHMD)
-- [**TELEGRAM**](t.me/BERA_TECH)
+- [**BERA TECH**](https://wa.me/+254743982206)
+- [**MARISEL**](https://wa.me/+254740007567)
+- [**TELEGRAM**](t.me/Beratech)
 - 
 
 
