@@ -37,11 +37,15 @@ sᴛᴀʀ 🌟 ᴍʏ ʀᴇᴘᴏ ɪғ ʏᴏᴜ ʟɪᴋᴇ ᴛʜɪs ʙᴏᴛ ®�
 click this link to access BERA MD deployment site.
 
 </a></p>
-- <a href="https://tech-wrld-1-47ff06be867a.herokuapp.com/"><img title="CLICK HERE TO DEPLOY" src="https://img.shields.io/badge/CLICK HERE TO DEPLOY-h?color=silver&style=for-the-badge&logo=ferrari&logoColor=gold" width="240" height="38.45"/></a></p>
+- <a href="https://dashboard.heroku.com/new?template=https://gitHub.com/Berabruce/BERA-MD"><img title="CLICK HERE TO DEPLOY" src="https://img.shields.io/badge/CLICK HERE TO DEPLOY-h?color=silver&style=for-the-badge&logo=ferrari&logoColor=gold" width="240" height="38.45"/></a></p>
 </details>
 
+## DO YOU WHAT TO HAVE YOUR OWN BOT AT A CHEEPER PRICE?
+## CLICK ON THE LINK BELOW ##
+<a href="https://tech-lab.onrender.com/"><img title="CLICK HERE " src="https://img.shields.io/badge/CLICK HERE-h?color=silver&style=for-the-badge&logo=ferrari&logoColor=gold" width="240" height="38.45"/></a></p>
+</details>
 
-## License
+## License ##
 
 The WhatsApp Bot BERA MD is released under the [MIT License](https://opensource.org/licenses/MIT).
 
