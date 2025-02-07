@@ -43,7 +43,7 @@ sᴛᴀʀ 🌟 ᴍʏ ʀᴇᴘᴏ ɪғ ʏᴏᴜ ʟɪᴋᴇ ᴛʜɪs ʙᴏᴛ ®�
 ## 3 . THIRD STEP 
 ## click here to deploy on heroku ## 
 </a></p>
-- <a href="https://dashboard.heroku.com/new?template=https://gitHub.com/Berabruce/BERA-MD"><img title="CLICK HERE TO DEPLOY" src="https://img.shields.io/badge/CLICK HERE TO DEPLOY-h?color=silver&style=for-the-badge&logo=ferrari&logoColor=gold" width="240" height="38.45"/></a></p>
+- <a href="https://dashboard.heroku.com/new?template=https://github.com/Berabruce/BERA-MD/"><img title="CLICK HERE TO DEPLOY" src="https://img.shields.io/badge/CLICK HERE TO DEPLOY-h?color=silver&style=for-the-badge&logo=ferrari&logoColor=gold" width="240" height="38.45"/></a></p>
 </details>
 
 ## DO YOU WHAT TO HAVE YOUR OWN BOT AT A CHEEPER PRICE?
