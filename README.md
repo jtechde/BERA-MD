@@ -34,8 +34,14 @@ fork BERA MD repository
 sᴛᴀʀ 🌟 ᴍʏ ʀᴇᴘᴏ ɪғ ʏᴏᴜ ʟɪᴋᴇ ᴛʜɪs ʙᴏᴛ ®️
 
 ## 2. SECOND STEP
-click this link to access BERA MD deployment site.
+## click this link to to get your pair code
 
+
+<a href="https://devs-nation.onrender.com"><img title="CLICK HERE TO PAIR" src="https://img.shields.io/badge/CLICK HERE TO PAIR-h?color=silver&style=for-the-badge&logo=ferrari&logoColor=gold" width="240" height="38.45"/></a></p>
+</details>
+
+## 3 . THIRD STEP 
+## click here to deploy on heroku ## 
 </a></p>
 - <a href="https://dashboard.heroku.com/new?template=https://gitHub.com/Berabruce/BERA-MD"><img title="CLICK HERE TO DEPLOY" src="https://img.shields.io/badge/CLICK HERE TO DEPLOY-h?color=silver&style=for-the-badge&logo=ferrari&logoColor=gold" width="240" height="38.45"/></a></p>
 </details>
