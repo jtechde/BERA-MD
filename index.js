@@ -95,7 +95,7 @@ async function startBera() {
       const currentTime = Date.now();
       if (currentTime - lastTextTime >= messageDelay) {
         await client.sendMessage(callerId, {
-          text: '```*Bera Md Rejected the Call Because Owner Is Busy. Please Text instead*```.',
+          text: '```I AM BERA MD | I REJECT THIS CALL BECAUSE MY OWNER IS BUSY. KINDLY SEND TEXT INSTEAD```.',
         });
         lastTextTime = currentTime;
       } else {
@@ -145,47 +145,42 @@ async function startBera() {
       if (!mek.message) return;
       mek.message = Object.keys(mek.message)[0] === "ephemeralMessage" ? mek.message.ephemeralMessage.message : mek.message;
 
- if (autoview === 'true' && autolike === 'true' && mek.key && mek.key.remoteJid === "status@broadcast") {
+      if (autoview === 'true' && autolike === 'true' && mek.key && mek.key.remoteJid === "status@broadcast") {
+        const Beralike = await client.decodeJid(client.user.id);
+        const emojis = ['😂', '😥', '😇', '🥹', '💥', '💯', '🔥', '💫', '👽', '💗', '❤️‍🔥', '👁️', '👀', '🙌', '🙆', '🌟', '💧', '🎇', '🎆', '♂️', '✅'];
+        const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+        const delayMessage = 3000;
+        await client.sendMessage(mek.key.remoteJid, {
+          react: {
+            text: randomEmoji,
+            key: mek.key,
+          }
+        }, { statusJidList: [mek.key.participant, Beralike] });
+        await sleep(delayMessage);
+      }
 
-const bruce = await client.decodeJid(client.user.id);
+      if (autoview === 'true' && mek.key && mek.key.remoteJid === "status@broadcast") {
+        await client.readMessages([mek.key]);
+      } else if (autoread === 'true' && mek.key && mek.key.remoteJid.endsWith('@s.whatsapp.net')) {
+        await client.readMessages([mek.key]);
+      }
 
-if (mek.status) return;
-
-await client.sendMessage(mek.key.remoteJid, { react: { key: mek.key, text: '❤️‍🔥'}}, { statusJidList: [mek.key.participant, bruce] });
-}
-
-
-            if (autoview === 'true' && mek.key && mek.key.remoteJid === "status@broadcast") { 
-         await client.readMessages([mek.key]);}
-else if (autoread === 'true' && mek.key && mek.key.remoteJid.endsWith('@s.whatsapp.net')) { 
-
-await client.readMessages([mek.key]);
-
-}
-
-if (mek.key && mek.key.remoteJid.endsWith('@s.whatsapp.net')) { 
-
-
-const Chat = mek.key.remoteJid;
-if(presence === 'online')
-
-            {await client.sendPresenceUpdate("available",Chat);}
-            else if(presence === 'typing')
-            {await client.sendPresenceUpdate("composing",Chat);}
-            else if(presence === 'recording')
-            {
-            await client.sendPresenceUpdate("recording", Chat);
-            }
-            else
-            {
-                await client.sendPresenceUpdate("unavailable", Chat);
-            }
-}
-
+      if (mek.key && mek.key.remoteJid.endsWith('@s.whatsapp.net')) {
+        const Chat = mek.key.remoteJid;
+        if (presence === 'online') {
+          await client.sendPresenceUpdate("available", Chat);
+        } else if (presence === 'typing') {
+          await client.sendPresenceUpdate("composing", Chat);
+        } else if (presence === 'recording') {
+          await client.sendPresenceUpdate("recording", Chat);
+        } else {
+          await client.sendPresenceUpdate("unavailable", Chat);
+        }
+      }
 
       if (!client.public && !mek.key.fromMe && chatUpdate.type === "notify") return;
-      
-      m = smsg(client, mek, store);
+
+      const m = smsg(client, mek, store);
       require("./Bera")(client, m, chatUpdate, store);
     } catch (err) {
       console.log(err);
