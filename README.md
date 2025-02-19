@@ -1,7 +1,7 @@
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=100&pause=1000&color=1BAFBAFF&center=true&width=1000&height=200&lines=BERA-+MD" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=100&pause=1000&color=1BAFBAFF&center=true&width=1000&height=200&lines=STING+MD" alt="Typing SVG" /></a>
   </p>
 
- <img alt="BERA MD" height="300" src="https://i.ibb.co/4jBhn13/Socialthumb.jpg">
+ <img alt="STING MD" height="300" src="https://i.ibb.co/4jBhn13/Socialthumb.jpg">
  
   
 </h1> 
